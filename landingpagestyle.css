@@ -1,0 +1,307 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: white;
+}
+h1, h2, h3{
+  font-family: 'Poppins', sans-serif;
+}
+a, p{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover{
+  opacity: 50%;
+}
+p{
+  font-weight: 400;
+}
+header{
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+nav{
+  width: 100%;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+nav .logo{
+  width: 30%;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+}
+nav .try a{
+  display: block;
+  padding: 7px 30px;
+  font-size: 0.75em;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px hsl(210, 23%, 81%);
+  color: hsl(192, 100%, 9%);
+  font-weight: 700;
+  background: white;
+}
+section{
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+}
+section .part{
+  width: 90%;
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 0 0 8px 1px hsl(193, 25%, 85%);
+  margin: 30px auto;
+  padding: 40px 30px;
+  position: relative;
+}
+footer{
+  background: hsl(192, 100%, 9%);
+  color: white;
+  position: relative;
+  margin-top: 200px;
+  padding: 0 5%;
+  padding-top: 130px;
+  padding-bottom: 40px;
+  font-size: 1em;
+}
+footer .calltoaction{
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 0 0 8px 1px hsl(189, 5%, 49%);
+  text-align: center;
+  padding: 40px 40px;
+  background: white;
+  color: hsl(192, 100%, 9%);
+  position: absolute;
+  top: -110px;
+}
+footer .calltoaction h3{
+  margin-bottom: 20px;
+}
+footer .calltoaction a{
+  display: inline-block;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 10px 60px;
+  background: hsl(322, 100%, 66%);
+  border-radius: 20px;
+  padding-bottom: 12px;
+}
+footer .left a, footer .right a{
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+}
+footer i{
+  margin-right: 15px;
+}
+footer .contact p, footer .infos a{
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+footer .contact div{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+footer .infos a:hover {
+  text-decoration: underline;
+}
+footer .social{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+footer .social a{
+  color: white;
+}
+footer .social a:hover{
+  opacity: 100%;
+}
+footer .social i:hover, footer .social i:active{
+  color: hsl(322, 100%, 66%);
+}
+footer h5{
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+@media only screen and (max-width:900px) {
+  header{
+    background: hsl(194, 76%, 97%) url(images/bg-hero-mobile.svg) no-repeat;
+    background-size: contain;
+  }  
+  header .presentation{
+    width: 90%;
+    margin: 30px auto;
+  }
+  .presentation h1{
+    margin: 30px auto;
+    width: 90%;
+  }
+  .presentation p{
+    width: 95%;
+    margin: 30px auto;
+  }
+  .presentation a{
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 10px 60px;
+    background: hsl(322, 100%, 66%);
+    border-radius: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 50px;   
+  }
+  header .illustration{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .illustration img{
+    width: 100%;
+    height: auto;
+  }
+  .part .illustration{
+    width: 90%;
+    margin: 30px auto; 
+  }
+  .part .text h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .part .text p{
+    color: hsl(208, 11%, 55%);
+  }
+  footer .calltoaction{
+    min-width: 400px;
+    left: calc(50% - 200px);
+  }
+  footer .social{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  footer h5{
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:901px) {
+  nav{
+    padding: 0 5%;
+  }
+  header{
+    background: hsl(194, 76%, 97%) url(images/bg-hero-desktop.svg) no-repeat;
+    background-size: contain;
+  }
+  header .presentation{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .presentation .text{
+    width: 40%;
+    text-align: left;
+  }
+  .presentation .illustration{
+    width: 55%;
+  }
+  .presentation h1{
+    margin: 22px auto;
+    width: 100%;
+    font-size: 1.65em;
+  }
+  .presentation p{
+    width: 100%;
+    margin: 25px auto;
+    font-size: 0.9em;
+  }
+  .presentation a{
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 10px 60px;
+    background: hsl(322, 100%, 66%);
+    border-radius: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 50px;   
+  }
+  .illustration img{
+    width: 100%;
+    height: auto;
+  }
+  .part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .part .text{
+    width: 50%;
+    text-align: left;
+    order: 1;
+    margin-left: 5%;
+  }
+  .part .illustration{
+    width: 35%;
+    order: 2;
+  }
+  .middle .text{
+    order: 2;
+    margin-left: 0;
+  }
+  .middle .illustration{
+    order: 1;
+    margin-left: 5%;
+  }
+  footer{
+    padding-bottom: 30px;
+  }
+  footer .calltoaction{
+    width: 750px;
+    left: calc(50% - 375px);
+  }
+  footer .calltoaction h3{
+    width: 100%;
+    text-align: center;
+  }
+  footer #cont{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  footer .contact{
+    width: 35%; 
+  }
+  footer .infos{
+    width: 25%;
+  }
+  footer .social{
+    width: 20%;
+  }
+  footer .infos{
+    display: flex;
+    justify-content: space-between;
+  }
+  footer h5{
+    position: absolute;
+    right: 5%;
+    bottom: 55px;
+  }
+}
