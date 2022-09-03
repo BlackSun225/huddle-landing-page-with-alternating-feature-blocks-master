@@ -80,7 +80,7 @@ footer{
 footer .calltoaction{
   border-radius: 15px;
   border: 1px solid white;
-  box-shadow: 0 0 8px 1px hsl(189, 5%, 49%);
+  box-shadow: 0 0 8px 1px hsl(189, 12%, 67%);
   text-align: center;
   padding: 40px 40px;
   background: white;
@@ -140,7 +140,7 @@ footer h5{
   font-weight: 400;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:600px) {
   header{
     background: hsl(194, 76%, 97%) url(images/bg-hero-mobile.svg) no-repeat;
     background-size: contain;
@@ -188,7 +188,67 @@ footer h5{
     color: hsl(208, 11%, 55%);
   }
   footer .calltoaction{
-    min-width: 400px;
+    width: 340px;
+    left: calc(50% - 170px);
+  }
+  footer .social{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  footer h5{
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:601px) {
+  header{
+    background: hsl(194, 76%, 97%) url(images/bg-hero-mobile.svg) no-repeat;
+    background-size: contain;
+  }  
+  header .presentation{
+    width: 90%;
+    margin: 30px auto;
+  }
+  .presentation h1{
+    margin: 30px auto;
+    width: 90%;
+  }
+  .presentation p{
+    width: 95%;
+    margin: 30px auto;
+  }
+  .presentation a{
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 10px 60px;
+    background: hsl(322, 100%, 66%);
+    border-radius: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 50px;   
+  }
+  header .illustration{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .illustration img{
+    width: 100%;
+    height: auto;
+  }
+  .part .illustration{
+    width: 90%;
+    margin: 30px auto; 
+  }
+  .part .text h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .part .text p{
+    color: hsl(208, 11%, 55%);
+  }
+  footer .calltoaction{
+    width: 400px;
     left: calc(50% - 200px);
   }
   footer .social{
@@ -213,6 +273,7 @@ footer h5{
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .presentation .text{
     width: 40%;
@@ -222,7 +283,7 @@ footer h5{
     width: 55%;
   }
   .presentation h1{
-    margin: 22px auto;
+    margin-bottom: 22px;
     width: 100%;
     font-size: 1.65em;
   }
@@ -240,7 +301,6 @@ footer h5{
     background: hsl(322, 100%, 66%);
     border-radius: 20px;
     padding-bottom: 12px;
-    margin-bottom: 50px;   
   }
   .illustration img{
     width: 100%;
@@ -257,6 +317,14 @@ footer h5{
     text-align: left;
     order: 1;
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .part .text h2{
+    margin-bottom: 20px;
+  }
+  .part .text p{
+    color: hsl(208, 11%, 55%);
   }
   .part .illustration{
     width: 35%;
